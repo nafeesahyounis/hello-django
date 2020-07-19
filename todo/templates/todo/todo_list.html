@@ -7,5 +7,10 @@
 </head>
 <body>
     <h1> Things I need to do: </h1>
+    {% for item in items %}
+    <p>{{ item.name }}</p>
+    <p>{{ item.done }}</p>
+
+    {% endfor %}
 </body>
 </html>
